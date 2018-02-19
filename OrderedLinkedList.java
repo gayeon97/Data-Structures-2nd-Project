@@ -353,13 +353,6 @@ public class OrderedLinkedList<E extends Comparable<E>> implements OrderedList<E
 		 Node<E> current = head;
 		 int counter = 0;
 
-		 //checks for list with one element
-		 if (current.next == null){
-			 head = null;
-			 size = 0;
-			 return null;
-		 }
-
 		 //Checks if the object at index to be removed is at the very beginning of the list
 		 if (index == 0){
 			 Node<E> temp = current;
